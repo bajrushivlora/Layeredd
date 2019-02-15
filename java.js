@@ -1,4 +1,4 @@
-for (var i = 0; i < 200; i++) {
+for (var i = 0; i < 4; i++) {
   var shape = document.createElement('div');
   shape.classList.add('shape');
   var container = document.querySelector('.content');
