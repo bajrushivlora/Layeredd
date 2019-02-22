@@ -42,54 +42,6 @@ body {
   animation-iteration-count: infinite;
 } 
 
-.shape {
-  position: relative;
-  background-color: #462549;
-  margin: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
-  width: 120px;
-  height: 120px;
-  display: inline-block;
-  transform: rotate(30deg);
-  transition: all 2s;
-  animation-name: spin;
-  animation-duration: 2s;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: infinite;
-}
-
-.othershape { 
-  position: relative;
-  background-color: #462549;
-  padding: 0px;
-  width: 120px;
-  height: 120px;
-  display: inline-block;
-  transition: all 2s;
-  animation-name: pulse;
-  animation-duration: .7s;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: infinite; 
-}
-
-.two {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 700px;
-  width: 0px;
-  height: 0px;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid #6d5d21;
-  transform: rotate(20deg);
-  animation-name: spin;
-  animation-duration: .8s;
-  animation-iteration-count: infinite; 
-}
-
 .one {
   position: fixed;
   background: #245600;
@@ -117,6 +69,22 @@ body {
   transform: rotate(-30deg);
 }
 
+.two {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 700px;
+  width: 0px;
+  height: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid #6d5d21;
+  transform: rotate(20deg);
+  animation-name: spin;
+  animation-duration: .8s;
+  animation-iteration-count: infinite; 
+}
+
 .three {
   position: relative;
   background: #606663;
@@ -124,8 +92,8 @@ body {
   margin-left: 600px;
   margin-right: auto;
   margin-top: 200px;
-  width: 100px;
-  height: 100px; 
+  width: 120px;
+  height: 120px; 
   animation-name: moving;
   animation-duration: .9s;
   animation-iteration-count: infinite;
@@ -157,19 +125,22 @@ body {
   height: 120px;
   transform: rotate(-30deg);
 }
-}
 
-.five {
+.shape {
   position: relative;
-  background: #5e3110;
-  border-radius: 0px;
-  margin-left: 500px;
+  background: #6d2917;
+  margin: auto;
+  margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
-  width: 80px;
-  height: 80px; 
+  padding: 0px;
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  transform: rotate(30deg);
+  transition: all 2s;
   animation-name: spin;
   animation-duration: 1s;
+  animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
 }
 
@@ -179,7 +150,6 @@ body {
 }
 
 audio {
-  display: none;
   opacity: 0;
 }
 

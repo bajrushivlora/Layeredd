@@ -32,53 +32,31 @@ function hslColor(h, s, l) {
 var container = document.querySelector(".content");
 
 
-for (var i = 0; i < 400; i++) {  
+for (var i = 0; i < 30; i++) {  
   var shape = document.createElement('div');
   shape.classList.add('shape');
 
-  shape.style.borderRadius = randomNumber(30, 100) + 'px';
-  shape.style.marginLeft = randomNumber(20, 1000) + 'px';
-  shape.style.marginRight = randomNumber(20, 1000) + 'px';
-  shape.style.marginBottom = randomNumber (0, 10) + 'px';
+  shape.style.borderRadius = randomNumber(0, 50) + 'px';
+  shape.style.marginLeft = randomNumber(40, 700) + 'px';
+  shape.style.marginBottom = randomNumber (20, 40) + 'px';
+  container.appendChild(shape);
+}
+
+for (var i = 0; i < 30; i++) {  
+  var shape = document.createElement('div');
+  shape.classList.add('shape');
+
+  shape.style.borderRadius = randomNumber(0, 50) + 'px';
+  shape.style.marginLeft = randomNumber(40, 700) + 'px';
+  shape.style.marginBottom = randomNumber (20, 40) + 'px';
   container.appendChild(shape);
 }
 
 
-function hslColor(h, s, l) {
-  var hue = h;
-  var saturation = s + "%";
-  var luminance = l + "%";
-
-  var color = "hsl(" + hue + "," + saturation + "," + luminance + ")";
-
-  return color;
-}
-
-var element = document.querySelectorAll('.shape');
-
 var hue = randomNumber(0, 360);
 var color = hslColor(hue, 360, 50);
-
-element.style.backgroundColor = color;
-
-
-
-
-
-
-for (var i = 0; i < 200; i++) {  
-  var othershape = document.createElement('div');
-  othershape.classList.add('othershape');
-
-  othershape.style.borderRadius = randomNumber(100, 200) + 'px';
-  othershape.style.marginLeft = randomNumber(20, 1000) + 'px';
-  othershape.style.marginRight = randomNumber(20, 1000) + 'px';
-  othershape.style.marginTop = randomNumber (300, 301) + 'px';
-  container.appendChild(othershape);
-}
-
-
-
+var element = document.querySelectorAll('.shape');
+element.style.background = color;
 
 
 
