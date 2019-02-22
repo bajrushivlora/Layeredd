@@ -196,7 +196,7 @@ body {
 
 .shape-interaction {
   position: relative;
-  transform: scale(1.2);
+  transform: scale(2);
 }
 
 audio {

@@ -56,6 +56,20 @@ for (var i = 0; i < 80; i++) {
   container.appendChild(shape);
 }
 
+
+var shapes = document.querySelectorAll('.shape');
+
+shapes.forEach(function(shape) {
+  shape.addEventListener('mouseover', function() {
+    if (shape.classList.contains('shape-interaction')) {
+      shape.classList.remove('shape-interaction');
+    } else {
+      shape.classList.add('shape-interaction');
+    }
+  });
+});
+
+
 for (var i = 0; i < 40; i++) {  
   var shapee = document.createElement('div');
   shapee.classList.add('shapee');
