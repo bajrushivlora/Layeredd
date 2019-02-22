@@ -32,26 +32,50 @@ function hslColor(h, s, l) {
 var container = document.querySelector(".content");
 
 
-for (var i = 0; i < 30; i++) {  
+for (var i = 0; i < 40; i++) {  
+  var tiny = document.createElement('div');
+  tiny.classList.add('tiny');
+
+  tiny.style.borderRadius = randomNumber(0, 50) + 'px';
+  tiny.style.marginLeft = randomNumber(0, 700) + 'px';
+  tiny.style.backgroundColor = '#' + randomNumber (0, 999999)
+  container.appendChild(tiny);
+}
+
+
+var container = document.querySelector(".content");
+
+
+for (var i = 0; i < 80; i++) {  
   var shape = document.createElement('div');
   shape.classList.add('shape');
 
   shape.style.borderRadius = randomNumber(0, 50) + 'px';
-  shape.style.marginLeft = randomNumber(40, 700) + 'px';
-  shape.style.marginBottom = randomNumber (20, 40) + 'px';
+  shape.style.marginLeft = randomNumber(0, 700) + 'px';
+  shape.style.backgroundColor = '#' + randomNumber (0, 999999)
   container.appendChild(shape);
 }
 
-for (var i = 0; i < 30; i++) {  
-  var shape = document.createElement('div');
-  shape.classList.add('shape');
+for (var i = 0; i < 40; i++) {  
+  var shapee = document.createElement('div');
+  shapee.classList.add('shapee');
 
-  shape.style.borderRadius = randomNumber(0, 50) + 'px';
-  shape.style.marginLeft = randomNumber(40, 700) + 'px';
-  shape.style.marginBottom = randomNumber (20, 40) + 'px';
-  container.appendChild(shape);
+  shapee.style.borderRadius = randomNumber(0, 50) + 'px';
+  shapee.style.marginLeft = randomNumber(0, 700) + 'px';
+  shapee.style.backgroundColor = '#' + randomNumber (0, 999999)
+  container.appendChild(shapee);
 }
 
+for (var i = 0; i < 40; i++) {  
+  var huge = document.createElement('div');
+  huge.classList.add('huge');
+
+  huge.style.borderRadius = randomNumber(0, 50) + 'px';
+  huge.style.marginLeft = randomNumber(20, 23) + 'px';
+  huge.style.marginRight = randomNumber(0, 20) + 'px';
+  huge.style.backgroundColor = '#' + randomNumber (0, 999999)
+  container.appendChild(huge);
+}
 
 var hue = randomNumber(0, 360);
 var color = hslColor(hue, 360, 50);
@@ -72,6 +96,11 @@ shapes.forEach(function(shape) {
     }
   });
 });
+
+
+
+
+
 
 
 

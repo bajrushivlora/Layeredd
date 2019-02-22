@@ -46,11 +46,11 @@ body {
   position: fixed;
   background: #245600;
   margin-top: -420px;
-  margin-left: 46vw;
+  margin-left: 47vw;
   margin-right: 54vw;
   border-radius: 36px;
-  width: 120px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
   z-index: 1; 
   transform: rotate(20deg);
   animation-name: pulse;
@@ -64,9 +64,9 @@ body {
   background: #245600;
   content: "";
   border-radius: 28px;
-  width: 120px;
-  height: 120px;
-  transform: rotate(-30deg);
+  width: 70px;
+  height: 70px;
+  transform: rotate(-40deg);
 }
 
 .two {
@@ -76,9 +76,9 @@ body {
   margin-top: 700px;
   width: 0px;
   height: 0px;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-bottom: 100px solid #6d5d21;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 70px solid #6d5d21;
   transform: rotate(20deg);
   animation-name: spin;
   animation-duration: .8s;
@@ -92,8 +92,8 @@ body {
   margin-left: 600px;
   margin-right: auto;
   margin-top: 200px;
-  width: 120px;
-  height: 120px; 
+  width: 70px;
+  height: 70px; 
   animation-name: moving;
   animation-duration: .9s;
   animation-iteration-count: infinite;
@@ -103,8 +103,8 @@ body {
   position: relative;
   background: #462549;
   border-radius: 36px;
-  width: 120px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
   z-index: 1; 
   transform: rotate(20deg);
   margin-left: 800px;
@@ -121,9 +121,26 @@ body {
   background: #462549;
   content: "";
   border-radius: 28px;
-  width: 120px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
   transform: rotate(-30deg);
+}
+
+.tiny {
+  position: relative;
+  background: #6d2917;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  transform: rotate(30deg);
+  transition: all 2s;
+  animation-name: pulse;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
 }
 
 .shape {
@@ -133,14 +150,47 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   display: inline-block;
   transform: rotate(30deg);
   transition: all 2s;
   animation-name: spin;
   animation-duration: 1s;
-  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+.shapee {
+  position: relative;
+  background: #6d2917;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  transform: rotate(30deg);
+  transition: all 2s;
+  animation-name: moving;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.huge {
+  position: relative;
+  background: #6d2917;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  width: 600px;
+  height: 600px;
+  display: inline-block;
+  transform: rotate(30deg);
+  transition: all 2s;
+  animation-name: spin;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
 }
 
@@ -203,7 +253,6 @@ audio {
   50% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
